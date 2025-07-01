@@ -5,7 +5,7 @@
 Logs saved on rsyslog server to /var/log/mikrotik.log
 
 
-<h5>Using manual</h5>
+<h5>Using in terminal</h5>
 
 python3 top_ips.py /var/log/mikrotik.log 10 # show top 10 ip
 

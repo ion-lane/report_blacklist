@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 import os
 import sys
 import json
@@ -17,7 +18,7 @@ LOG_FILE = sys.argv[1] if len(sys.argv) > 1 else 'log.txt'
 DATA_DIR = '/var/www/top_ips/data'
 BACKUP_DIR = '/var/log/mikrotik_backup'
 TEMP_LOG = '/tmp/log_copy.txt'
-PREFIXES = ['blinp_', 'blfwd_', 'grchc_', 'dns_', 'invalid_', 'private', 'drop_', 'icmp_']
+PREFIXES = ['blinp_', 'blfwd_', 'grchc_', 'dns_', 'invalid_', 'private_', 'drop_', 'icmp_']
 EXCLUDE_NETWORKS = ['77.34.131.45', '10.0.0.0/24']
 def ip_in_network(ip, network):
     try:
